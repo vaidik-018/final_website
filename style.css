@@ -230,3 +230,30 @@ section { scroll-margin-top: 88px; }
 @media (min-width: 768px) {
   .md\:inline-block { display: inline-block; }
 }
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 18px;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0,0,0,.12);
+}
+.card-title { font-weight: 700; margin-bottom: 6px; }
+.card-desc { color: var(--muted); }
+.card-actions { display: flex; justify-content: space-between; margin-top: 10px; }
+.text-link { color: var(--brand); font-weight: 600; }
+/* Card hover effect */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 18px;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 35px rgba(0,0,0,.18);
+}
